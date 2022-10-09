@@ -143,8 +143,8 @@ public class Basics {
          */
         StringBuilder ret = new StringBuilder();
         String[] words = to_split.split(" ");
-        for (int i = 0; i < words.length; i++) {
-            ret.append(words[i].charAt(0));
+        for (String word : words) {
+            ret.append(word.charAt(0));
         }
         return ret.toString();
     }
